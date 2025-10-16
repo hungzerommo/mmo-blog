@@ -1,0 +1,25 @@
+
+backend:
+  name: github
+  repo: hungzerommo/mmo-blog # Đường dẫn tới kho chứa của bạn
+  branch: main # Nhánh bạn muốn CMS làm việc
+
+media_folder: "assets/images/uploads" # Nơi lưu ảnh tải lên
+public_folder: "/assets/images/uploads" # Đường dẫn công khai tới ảnh
+
+collections:
+  - name: "posts" # Tên của bộ sưu tập
+    label: "Bài viết" # Nhãn hiển thị trên giao diện
+    folder: "_posts" # Thư mục lưu các tệp bài viết
+    create: true # Cho phép tạo bài viết mới
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Định dạng tên tệp
+    extension: "md" # Phần mở rộng của tệp
+    format: "frontmatter" # Sử dụng YAML front matter
+    fields: # Các trường thông tin của một bài viết
+      - { label: "Tiêu đề", name: "title", widget: "string" }
+      - { label: "Ngày đăng", name: "date", widget: "datetime" }
+      - { label: "Ảnh thumbnail", name: "thumbnail", widget: "image" }
+      - { label: "Tóm tắt (Excerpt)", name: "excerpt", widget: "text" }
+      - { label: "Danh mục (Category)", name: "category", widget: "select", options: ["affiliate", "website-blog", "tool-toi-uu-hoa", "case-study-ai", "tu-dong-hoa-mmo", "tao-anh-video", "tai-nguyen-hoc", "facebook", "dien-dan", "chien-luoc-mmo", "kho-tai-nguyen", "tool-template", "freelance", "nang-cao", "seo-content", "quan-ly-du-an", "crypto-blockchain"] }
+      - { label: "Thẻ (Tags)", name: "tags", widget: "list", required: false }
+      - { label: "Nội dung", name: "body", widget: "markdown" }
