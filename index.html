@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Blog cá nhân chia sẻ kiến thức và kinh nghiệm Make Money Online (MMO).">
+    <title>MMO Insight | Blog Make Money Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="home">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">MMO Insight</a>
+                        <button class="nav-toggle" aria-label="Mở điều hướng" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav" aria-label="Chính">
+                <div class="nav-panel">
+                    <ul class="nav-list" id="primaryNav"></ul>
+                    <form class="header-search" role="search">
+                        <label for="searchInput" class="sr-only">Tìm kiếm bài viết</label>
+                        <div class="search-field">
+                            <input id="searchInput" type="search" placeholder="Tìm kiếm bài viết..." autocomplete="off">
+                            <button id="searchButton" class="search-button" type="button" aria-label="Tìm kiếm">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M15.5 14h-.79l-.28-.27a6 6 0 1 0-.71.71l.27.28v.79l5 4.99L20.49 19zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="search-status" id="searchStatus" aria-live="polite"></p>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <section class="hero" id="intro">
+        <div class="container hero-slider" id="heroSlider">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <p class="eyebrow" id="heroEyebrow">Khởi đầu bền vững</p>
+                    <h1 id="heroTitle">Xây nền tảng MMO vững chắc và phát triển lâu dài</h1>
+                    <p class="hero-summary" id="heroSummary">Các bài viết được chọn lọc nhằm giúp bạn tối ưu thu nhập online, cập nhật xu hướng và vận dụng chiến lược hiệu quả.</p>
+                    <a class="btn btn-primary" href="#latestPosts" id="heroLink">Đọc bài nổi bật</a>
+                </div>
+                <div class="hero-visual">
+                    <img id="heroImage" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80" alt="Minh họa kiếm tiền online">
+                </div>
+            </div>
+            <button class="hero-nav hero-nav--prev" id="heroPrev" type="button" aria-label="Bài nổi bật trước">
+                <span aria-hidden="true">‹</span>
+            </button>
+            <button class="hero-nav hero-nav--next" id="heroNext" type="button" aria-label="Bài nổi bật tiếp theo">
+                <span aria-hidden="true">›</span>
+            </button>
+            <div class="hero-dots" id="heroDots" role="tablist" aria-label="Chọn bài nổi bật"></div>
+        </div>
+    </section>
+
+        <section class="section" id="latest">
+            <div class="container section-header">
+                <h2>Bài viết mới nhất</h2>
+                <a class="link-muted" href="category.html?category=All">Xem tất cả danh mục</a>
+            </div>
+            <div class="container">
+                <div class="post-grid" id="latestPosts"></div>
+                <div class="load-more-wrapper" id="homeLoadMoreWrapper">
+                    <button class="btn-load-more" id="homeLoadMore" type="button">Tải thêm</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container section-header">
+                <h2>Bài viết nổi bật</h2>
+                <p class="section-subtitle">Những nội dung được quan tâm nhiều nhất trong cộng đồng MMO thời gian gần đây.</p>
+            </div>
+            <div class="container">
+                <div class="post-grid" id="featuredPosts"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>MMO Insight</h4>
+                <p>Blog cá nhân chia sẻ kiến thức Make Money Online, hướng tới những chiến lược bền vững và thực tế.</p>
+            </div>
+            <div>
+                <h4>Kết nối</h4>
+                <ul>
+                    <li><a href="mailto:contact@mmoinsight.com">contact@mmoinsight.com</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Thông tin hữu ích</h4>
+                <ul>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="currentYear"></span> MMO Insight. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/home.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

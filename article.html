@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chi tiết bài viết | MMO Insight</title>
+    <meta name="description" content="Đọc chi tiết các bài viết chuyên sâu về Make Money Online.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="article">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">MMO Insight</a>
+                        <button class="nav-toggle" aria-label="Mở điều hướng" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav" aria-label="Chính">
+                <div class="nav-panel">
+                    <ul class="nav-list" id="primaryNav"></ul>
+                    <form class="header-search" role="search">
+                        <label for="searchInput" class="sr-only">Tìm kiếm bài viết</label>
+                        <div class="search-field">
+                            <input id="searchInput" type="search" placeholder="Tìm kiếm bài viết..." autocomplete="off">
+                            <button id="searchButton" class="search-button" type="button" aria-label="Tìm kiếm">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M15.5 14h-.79l-.28-.27a6 6 0 1 0-.71.71l.27.28v.79l5 4.99L20.49 19zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="search-status" id="searchStatus" aria-live="polite"></p>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <nav class="breadcrumb" aria-label="Đường dẫn">
+            <div class="container">
+                <ol>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a id="breadcrumbCategoryLink" href="category.html?category=All">Danh mục</a></li>
+                    <li id="breadcrumbCurrent">Đang tải...</li>
+                </ol>
+            </div>
+        </nav>
+
+        <article class="article container" id="articleWrapper">
+            <header class="article-header">
+                <p class="eyebrow" id="articleCategory"></p>
+                <h1 id="articleTitle">Đang tải...</h1>
+                <div class="article-meta">
+                    <time id="articleDate"></time>
+                </div>
+                <ul class="article-tags" id="articleTags"></ul>
+            </header>
+            <figure class="article-cover" id="articleCover" hidden>
+                <img id="articleImage" src="" alt="">
+                <figcaption id="articleImageCaption"></figcaption>
+            </figure>
+            <div class="article-content" id="articleContent">
+                <p>Đang tải nội dung bài viết...</p>
+            </div>
+        </article>
+
+        <section class="section section-alt">
+            <div class="container section-header">
+                <h2>Bài viết liên quan</h2>
+            </div>
+            <div class="container">
+                <div class="related-grid" id="relatedPosts"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>MMO Insight</h4>
+                <p>Blog cá nhân chia sẻ kiến thức Make Money Online, hướng tới những chiến lược bền vững và thực tế.</p>
+            </div>
+            <div>
+                <h4>Kết nối</h4>
+                <ul>
+                    <li><a href="mailto:contact@mmoinsight.com">contact@mmoinsight.com</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Thông tin hữu ích</h4>
+                <ul>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="currentYear"></span> MMO Insight. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/article.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
